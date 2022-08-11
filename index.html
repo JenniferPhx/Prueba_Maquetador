@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+            
+    </head>
+    <body>
+        <div id="caja">
+            <img src="img/Logo_Resuelve_tu_Deuda.png" alt="Logo" title="Logo" height="120px" />
+        </div>
+        <div id="caja2">
+            <p>Rellena los siguientes campos</p>
+        </div>
+
+        <main>           
+            <form action="datos.html" class="formulario" id="formulario">
+                <!--Banco-->
+                <div class="" id="form_banco">
+                <label>Banco</label>
+                    <div class="">
+                        <select name="banco" id="banco" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="BBVA">BBVA</option>
+                            <option value="Banamex">Banamex</option>
+                            <option value="Santander">Santander</option>
+                            <option value="HSBC">HSBC</option>
+                        </select>
+                    </div>
+                </div><br>
+                <!--Tiendas-->
+                <div class="" id="form_tienda">
+                    <label>Tiendas departamentales</label>
+                    <div class="">
+                        <select name="tienda" id="tienda" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="Sears">Sears</option>
+                            <option value="Sanborns">Sanborns</option>
+                            <option value="Liverpool">Liverpool</option>
+                        </select>
+                    </div>
+                </div><br>
+                <!--Financieras-->
+                <div class="" id="form_financieras">
+                    <label>Financieras</label>
+                    <div class="">
+                        <select name="financieras" id="financieras" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="exitus_Credit">Exitus Credit</option>
+                            <option value="credito_Familiar">Credito Familiar</option>
+                            <option value="credomatic">Credomatic</option>
+                        </select>
+                    </div>
+                </div><br>
+                <!--Deuda-->
+                <div class="" id="form_deuda">
+                    <label>Monto de deuda</label>
+                    <div class="formulario_input">
+                        <input type="number" min="35" name="deuda" id="deuda" required/><br>
+                        <label id="monto">*Cantidad mínima de 35K o más</label>
+                    </div>
+                </div>
+                <!--Boton-->
+                <div id="continuar">
+                    <button onclick="guardarDatos2();">Continuar</button>
+                </div>
+
+            </form>
+    
+        </main>
+
+        <script src="JS/code.js"></script>  
+                
+    </body>
+</html>

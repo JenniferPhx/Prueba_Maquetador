@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+
+</head>
+<body>
+    <div id="caja">
+        <img src="img/Logo_Resuelve_tu_Deuda.png" alt="Logo" title="Logo" height="120px" />
+    </div>   
+    <div id="caja2">
+        <p>Datos personales</p>
+    </div>
+    
+    <main>
+        <form action="fin.html" class="formulario2" id="formulario2">
+            <!--Nombre-->
+            <div class="" id="form_Nombre">
+                <label for="nombre" class="">Nombre(s)</label>
+                <input type="text" class="" name="nombre" id="nombre" required/>
+            </div><br>
+            <!--Apellido Paterno-->
+            <div class="" id="form_Apellidopa">
+                <label for="apellidopa" class="">Apellido Paterno</label>
+                <input type="text" class="" name="apellidopa" id="apellidopa" required/>   
+            </div><br>
+            <!--Apellido Materno-->
+            <div class="" id="formApellidoma">
+                <label for="apellidoma" class="">Apellido Materno</label>
+                <input type="text" class="" name="apellidoma" id="apellidoma" required/>                
+            </div><br>
+            <!--Telefono-->
+            <div class="" id ="form_Telefono">
+                <label for="telefono" class="">Teléfono</label>
+                <input type="text" minlength="10" maxlength="10" class="" name="telefono" id="telefono" required/>          
+            </div><br>
+            <!--Correo-->
+            <div class="" id="form_Correo">
+                <label for="correo" class="">Correo</label>
+                <input type="email" class="" name="correo" id="correo" required/>
+           </div><br>
+             <!--RFC-->
+             <div class="" id="form_Rfc">
+                <label for="rfc" class="">RFC</label>
+                <input type="text" minlength="10" maxlength="10" class="" name="rfc" id="rfc" required/>
+            </div> <br>
+            <div class="" id="botonEnviar">
+                <button onclick="guardarDatos();" id="boton2"> Enviar</button>
+            </div>
+        </form>
+        
+    </main>
+
+  <script src="JS/code.js"></script>  
+</body>
+</html>
